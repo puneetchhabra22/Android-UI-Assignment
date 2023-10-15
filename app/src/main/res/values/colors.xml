@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="cyan">#00BCBC</color>
+    <color name="violet">#9A18FF</color>
+    <color name="violetBlue">#6364F4</color>
+    <color name="lightGreen">#ADE6C4</color>
+    <color name="lightPink">#EC6BAC</color>
+    <color name="darkBlue">#04308A</color>
+    <color name="darkBlueTrans">#E1284C95</color>
+    <color name="navyBlueButtonBG">#00014F</color>
+    <color name="greyBG">#F5F5F5</color>
+    <color name="greyText">#ADADAD</color>
+    <color name="tabViewBGColor">#F2F1FA</color>
+    <color name="tabSelectedBG">#455079</color>
+
+</resources>

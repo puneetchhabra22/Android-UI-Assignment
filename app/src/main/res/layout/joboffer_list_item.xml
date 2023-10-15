@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="16dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/jobPhotoCardView"
+        android:layout_width="@dimen/_48sdp"
+        android:layout_height="@dimen/_48sdp"
+        android:layout_margin="@dimen/_16sdp"
+        app:cardCornerRadius="@dimen/_200sdp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/jobTitle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/jobPhoto"
+            android:scaleType="fitXY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/surgex_logo" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/jobTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Android Developer"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        app:layout_constraintTop_toTopOf="@id/jobPhotoCardView"
+        app:layout_constraintBottom_toTopOf="@id/jobDescText"
+        app:layout_constraintStart_toEndOf="@id/jobPhotoCardView"
+        app:layout_constraintRight_toLeftOf="@id/jobStatusCard"/>
+
+    <TextView
+        android:id="@+id/jobDescText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Android Developer at Surgex Digital"
+        app:layout_constraintTop_toBottomOf="@id/jobTitle"
+        app:layout_constraintBottom_toBottomOf="@id/jobPhotoCardView"
+        app:layout_constraintLeft_toRightOf="@id/jobPhotoCardView"
+        android:layout_marginLeft="@dimen/_16sdp"
+        app:layout_constraintRight_toLeftOf="@id/jobStatusCard"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/jobStatusCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardElevation="0dp"
+        app:layout_constraintLeft_toRightOf="@id/jobTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="@dimen/_8sdp"
+        app:layout_constraintTop_toTopOf="@id/jobTitle"
+        app:layout_constraintBottom_toBottomOf="@id/jobTitle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/jobStatusColorImage"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/green_circle" />
+
+            <TextView
+                android:id="@+id/jobStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="Active"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/shareJobImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/share"
+        app:layout_constraintTop_toBottomOf="@id/jobStatusCard"
+        android:layout_marginTop="@dimen/_24sdp"
+        app:layout_constraintBottom_toBottomOf="@id/jobDescText"
+        app:layout_constraintStart_toStartOf="@id/jobStatusCard"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

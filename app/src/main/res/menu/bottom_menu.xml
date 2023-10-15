@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Home"
+        android:icon="@drawable/home"/>
+
+    <item
+        android:id="@+id/collabItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Collab"
+        android:icon="@drawable/collab"/>
+
+    <item
+        android:id="@+id/referalItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Referal"
+        android:icon="@drawable/notification"/>
+
+    <item
+        android:id="@+id/teamItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="My Team"
+        android:icon="@drawable/team"/>
+</menu>

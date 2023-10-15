@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/toolbarMenu"
+        android:icon="@drawable/more_horizontal"
+        android:title="menu"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/help_black"
+                android:title="Contact"
+                android:id="@+id/contactMenuItem"/>
+            <item
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:title="Feedback"
+                android:icon="@drawable/ic_notifications_black_24dp"
+                android:id="@+id/feedbackMenuItem"/>
+        </menu>
+    </item>
+
+</menu>
